@@ -10,10 +10,10 @@
 * There are two implementations, one using threads, the other using processes.
 * Each implementation can be compiled and ran and it will test how effective each version is on your machine.
 * You can run the thread version by using the following commands
-> gcc parallel_sort_threads.c -o parallel_sort_threads -lpthread
+> gcc parallel_sort_threads.c -o parallel_sort_threads -lpthread  
 > ./parallel_sort_threads
 * You can run the multiprocess version by using the following commands
-> gcc -o parallel_sort_processes parallel_sort_processes.c
+> gcc -o parallel_sort_processes parallel_sort_processes.c  
 > ./parallel_sort_processes
 * If you would like to test each implementation with a different size of array, you can change the size of the array by editing the n variable within the file (in threads, n is on line 42. in processes, n is on line 34).
 ### Problem 2
@@ -32,31 +32,22 @@
 * For the threaded version of Problem 1, there is no need for IPC. For the processes version of Problem 1, pipes are used for IPC.
 
 ## Performance Evaluation
-* Problem 1 (Process):
-|Workers|Size|Time Taken|
-|---|---|---|
-|1|32|
-|4|32|
-|8|32|
-|1|131072|
-|4|131072|
-|8|131072|
-* Problem 1 (Threads):
-|Workers|Size|Time Taken|
-|---|---|---|
-|1|32| |
-|4|32| |
-|8|32| |
-|1|131072| |
-|4|131072| |
-|8|131072| |
-* Problem 2:
-|Workers|Size|Time Taken|
-|---|---|---|
-|1|32| |
-|4|32| |
-|8|32| |
-|1|131072| |
-|4|131072| |
-|8|131072| |
+* Problem 1 (Process):  
+| Workers | Size | Time Taken |
+|---------|------|------------|
+| 1       | 131072   |            |
+| 4       | 131072   |            |
+| 8       | 131072   |            |
+* Problem 1 (Threads):  
+|Workers|Size|Time Taken|  
+|---|---|---|  
+|1|131072| |  
+|4|131072| |  
+|8|131072| |  
+* Problem 2:  
+|Workers|Size|Time Taken|  
+|---|---|---|  
+|1|131072| |  
+|4|131072| |  
+|8|131072| |  
 ## Conclusion
